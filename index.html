@@ -57,7 +57,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-titel">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button" name="button">Заказать услугу</button>
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -114,15 +114,24 @@
                 <h2 class="works-titel">Чем мы занимаемся</h2>
                 <ul class="works-list list">
                     <li class="works-img">
-                        <img src="./imagis/works/works1.jpg" alt="Консоль" width="370" height="294">
+                        <div class="works-list-position">
+                            <img src="./imagis/works/works1.jpg" alt="Консоль" width="370" height="294">
+                            <p class="works-list-titel">Десктопные приложения</p>
+                        </div>
                     </li>
 
                     <li class="works-img">
-                        <img src="./imagis/works/works2.jpg" alt="Мобильный телефон" width="370" height="294">
+                        <div class="works-list-position">
+                            <img src="./imagis/works/works2.jpg" alt="Мобильный телефон" width="370" height="294">
+                            <p class="works-list-titel">Мобильные приложения</p>
+                        </div>                        
                     </li>
 
                     <li class="works-img">
-                        <img src="./imagis/works/works3.jpg" alt="Планшет" width="370" height="294">
+                        <div class="works-list-position">
+                            <img src="./imagis/works/works3.jpg" alt="Планшет" width="370" height="294">
+                            <p class="works-list-titel">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -400,6 +409,18 @@
             </address>
         </div>
     </footer>
+
+    <!--BACKDORP-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-button" data-modal-close>
+                <svg class="icon-close">
+                    <use href="./imagis/sprite.svg#icon-close-black-18dp" width="18" height="18"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/model.js"></script>
 </body>
 
 </html>
